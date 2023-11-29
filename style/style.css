@@ -77,36 +77,25 @@ main{
 }
 .grid-container{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-height: 100vh;
-display: grid;
-grid-template-columns: 1fr 0.6fr;
-grid-template-rows: 0.7fr 1.7fr;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    grid-template-rows: 0.7fr 1fr;
 }
 #myskills{
+    padding-bottom: 15px;
     padding-top: 10px;
-    margin-left: 15px;
-    height: 80%;
-    border-radius: 15px;
     padding-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    border-radius: 15px;
+    max-width: 576px;
+    height: max-content;
     background: #0E1322;
     color: white;
-    overflow: scroll;
-    overflow-x: hidden;
 }
-#myskills::-webkit-scrollbar{
-    background:#1e2847;
-    border-top-right-radius: 15px;
-    width: 10px;
-}
-#myskills::-webkit-scrollbar-{
-    background: white;
 
-}
-#myskills::-webkit-scrollbar-thumb{
-    background: rgba(255, 255, 255, 0.568);
-    border-radius: 15px;
-    
-}
 #myskills>h3{
     font-family: pixel;
     font-size: 1.3rem;
@@ -148,10 +137,17 @@ grid-template-rows: 0.7fr 1.7fr;
 #aboutme{
     background: #0E1322;
     color: white;
+    border-radius: 15px;
+    margin: 0px 10px;
+    height: max-content; 
+    font-size: 2rem;  
 
 }
 #aboutme>p{
     max-width: 500px;
+    text-indent: 15px;
+    margin-left: 15px;
+    padding: 15px;
 }
 #container-aboutme>h2{
     margin-left: 15px;
@@ -187,16 +183,32 @@ grid-template-rows: 0.7fr 1.7fr;
     justify-content: flex-end;
 }
 #english{
-    margin-right: 20px;
-    max-width: 450px;
-    height: 80%;
+    padding-bottom: 15px;
+    padding-top: 10px;
     padding-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    width: 100%;
+    max-height: max-content;
     background: #0E1322;
     border-radius: 15px;
     text-align: left;
 }
-#english>p{margin-top:10px; font-size: 1.4rem;}
-#english>h3{margin-top:10px; font-size:1.6rem;}
+#english>p{margin-top:10px; font-size: 1.4rem; max-width: 300px;}
+#english>h3{margin-top:25px; font-size:1.6rem;}
+
+
+
+/*FOOTER*/
+
+footer{
+    background: black url(../img/third-image.jpg) top right/cover no-repeat;
+
+}
+
+
+
 
 
 
@@ -210,30 +222,18 @@ grid-template-rows: 0.7fr 1.7fr;
             text-align: center;
             flex-direction: column;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             width: 70vw;
             font-size: 0.4rem;
             align-items: center;
         }
+        
         .flex-container > img{
             width: 80px;
-    
-        }
-        #myskills > h3{
-            font-size: 0.9rem;
-        }
-        #myskills > p{
-            font-size: 0.8rem;
-        }
-        #myskills > h4{
-            font-size: 0.6rem;
-        }
-        #english > h3{
-            font-size: 1.5rem;
-        }
-        #english>p{
-            font-size: 0.8rem;
         }
 
-
+        #container-skills{
+            display: flex;
+            flex-direction: column;
+        }
     }
